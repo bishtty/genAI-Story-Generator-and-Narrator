@@ -3,7 +3,7 @@ from story_generator import generate_story_from_images,narrate_story
 from PIL import Image
 
 st.title("AI story Generator from Images")
-st.markdown("Upload 1 to 10 images,choose an style and let AI write and narrate an story for you.")
+st.markdown("Upload 1 to 10 Images,choose a style and let AI write and narrate a story for you.")
 
 
 
@@ -35,7 +35,7 @@ if generate_button:
     if not uploaded_files:
         st.warning("Please upload atlest 1 image.")
     elif len(uploaded_files)>10:
-        st.warning("Please upload an maximum of 10 images.")
+        st.warning("Please upload a maximum of 10 images.")
     else:
         with st.spinner("The AI is writing  and narrating your story..... This may take few moments."):
             try:
